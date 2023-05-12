@@ -1,4 +1,4 @@
-const stripe = Stripe("pk_test_51MdG6EFY7D2eJXuujiFQ7b9FQ7qmQ81SaEAsmDCJB1V780sD7zQ87jEUrBZevOAv0cuyFNLKFZUfwgYOMRRapj7500jmZQMGk6")
+const stripe = Stripe("Public Key Here")
 const button = document.getElementsByClassName("order-button1")[0]
 button.addEventListener("click", () => {
     fetch("checkout.php", {
