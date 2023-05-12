@@ -2,10 +2,10 @@
 require "./vendor/autoload.php";
 header("Content-Type", "application/json");
 
-// \Stripe\Stripe::setApiKey("sk_test_51MdG6EFY7D2eJXuuiyglYBZ1LiqmewSLnXdQ3hnpY2b6VebjA5HMAXqHyAZpXmn20XrmPdGn4unKE3dzqg6WmYUf00FKhX6dB8");
+// \Stripe\Stripe::setApiKey("Private Key Here");
 // $session = Stripe\Checkout\Session::create([...]);
 
-$stripe = new Stripe\StripeClient("sk_test_51MdG6EFY7D2eJXuuiyglYBZ1LiqmewSLnXdQ3hnpY2b6VebjA5HMAXqHyAZpXmn20XrmPdGn4unKE3dzqg6WmYUf00FKhX6dB8");
+$stripe = new Stripe\StripeClient("Private Key Here");
 $session = $stripe -> checkout -> sessions -> create([
     "success_url" => "http://localhost:8080/success.html",
     "cancel_url" => "http://localhost:8080/cancel.html",
