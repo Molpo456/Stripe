@@ -1,5 +1,5 @@
 <?php
-require "./vendor/autoload.php";
+require "vendor/autoload.php";
 header("Content-Type", "application/json");
 
 // \Stripe\Stripe::setApiKey("Private Key Here");
